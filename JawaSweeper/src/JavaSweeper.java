@@ -16,6 +16,13 @@ public class JavaSweeper extends JFrame
 {
 	//
 	private JPanel panel;
+	// Константы
+	// кол-во колонок
+	private final int COLS = 15;
+	// кол-во строчек
+	private final int ROWS = 1;
+	// размер картинок (50x50)
+	private final int IMAGE_SIZE = 50;
 
 	/**
 	 * 
