@@ -1,4 +1,7 @@
+import java.awt.Dimension;
+
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
 /**
@@ -11,6 +14,8 @@ import javax.swing.WindowConstants;
  */
 public class JavaSweeper extends JFrame
 {
+	//
+	private JPanel panel;
 
 	/**
 	 * 
@@ -32,6 +37,19 @@ public class JavaSweeper extends JFrame
 	{
 		// Вызов инициализации фрейма
 		initFrame();
+		// Вызов инициализации панели
+		initPanel();
+	}
+	
+	// Функция инициализации панели
+	private void initPanel()
+	{
+		// Создаём панель
+		panel = new JPanel();
+		// Установка размеров панели
+		panel.setPreferredSize(new Dimension(500, 500));
+		// добавить панель на фрейм
+		add(panel);
 	}
 	
 	// Функция для подготовки всего необходимого для запуска рамки (frame)
