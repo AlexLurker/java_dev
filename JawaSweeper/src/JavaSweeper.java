@@ -54,7 +54,8 @@ public class JavaSweeper extends JFrame
 		// Создаём панель
 		panel = new JPanel();
 		// Установка размеров панели
-		panel.setPreferredSize(new Dimension(500, 500));
+		panel.setPreferredSize(new Dimension(COLS * IMAGE_SIZE, 
+				                             ROWS * IMAGE_SIZE));
 		// добавить панель на фрейм
 		add(panel);
 	}
